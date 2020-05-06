@@ -39,11 +39,11 @@ function renderHistory() {
     historyList.innerHTML = "";
 
     for (let history of historyData) {
-        let row = document.createElement('tr');
-        let row.innerHTML = "<td>" + history.firstNumber + "</td>";
-        let row.innerHTML += "<td>" + history.operator + "</td>";
-        let row.innerHTML += "<td>" + history.secondNumber + "</td>";
-        let row.innerHTML += "<td>" + history.result + "</td>";
+        let row = document.createElement('row');
+        row.textContent = '<td>' + history.firstNumber + '</td>';
+        row.textContent = '<td>' + history.operator + '</td>';
+        row.textContent = '<td>' + history.secondNumber + '</td>';
+        row.textContent = '<td>' + history.result + '</td>';
 
         historyList.appendChild(row);
     }
